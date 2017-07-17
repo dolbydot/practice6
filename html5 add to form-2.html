@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html 5为input元素新增的属性</title>
+	<style type="text/css"></style>
+</head>
+<body>
+<h1>html 5为input元素新增的属性-1</h1>
+<form action="/example/html5/demo_form.asp" method="get" id="form1">
+<p><b>autocomplete</b>-规定表单或输入字段是否应该自动完成</p>
+  E-mail: <input type="email" name="email" autocomplete="off" /><hr/>
+
+<p><b>autofocus</b>-如果设置`autofocus="autofocus"`，则当页面加载时input元素应该自动获得焦点.</p>
+  E-mail: <input type="email" name="email" autofocus="autofocus" /><hr/>
+
+<p><b>form</b>-如果使用form属性，form属性的值必须是所属表单的id。</p>
+  First name: <input type="text" name="fname" /><hr/>
+
+<p><b>formaction</b>-formaction会覆盖`form`元素的action属性。</p>
+First name: <input type="text" name="fname" /><br />
+Last name: <input type="text" name="lname" /><hr/>
+
+<input type="submit" value="提交" /><br />
+<input type="submit" formaction="/example/html5/demo_admin.asp" value="以管理员身份提交" />
+</form>
+
+<p>下面的 "Last name" 字段位于form元素之外，但仍然是表单的一部分。</p>
+Last name: <input type="text" name="lname" form="form1" />
+
+</form>
+</body>
+</html>
